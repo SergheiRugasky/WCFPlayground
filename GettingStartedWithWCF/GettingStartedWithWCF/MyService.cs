@@ -27,7 +27,7 @@ namespace GettingStartedWithWCF
     {
         public string SayHello(Name personName)
         {
-            return "Hello " + personName.First + personName.Last;
+            return "Hello " + personName.First +" "+ personName.Last;
         }
     }
 }
