@@ -21,6 +21,9 @@ namespace ServiceCalculator
 
         [OperationContract]
         void ThrowError();
+
+        [OperationContract]
+        string TestingAsyncCall(string id);
     }
 
     public class CalculatorService : ICalculatorService
@@ -43,6 +46,11 @@ namespace ServiceCalculator
         public void ThrowError()
         {
             throw new FaultException("Hey asshole");
+        }
+
+        public string TestingAsyncCall(string id)
+        {
+            return id + " was first";
         }
     }
 }

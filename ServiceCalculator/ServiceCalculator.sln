@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceCalculatorHost", "Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{4B72B656-7261-4CD7-A419-46D10B961098}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuntimeClient", "RuntimeClient\RuntimeClient.csproj", "{C3525197-C587-4560-88F8-D21BFCECBBE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,16 @@ Global
 		{4B72B656-7261-4CD7-A419-46D10B961098}.Release|Mixed Platforms.Build.0 = Release|x86
 		{4B72B656-7261-4CD7-A419-46D10B961098}.Release|x86.ActiveCfg = Release|x86
 		{4B72B656-7261-4CD7-A419-46D10B961098}.Release|x86.Build.0 = Release|x86
+		{C3525197-C587-4560-88F8-D21BFCECBBE0}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C3525197-C587-4560-88F8-D21BFCECBBE0}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{C3525197-C587-4560-88F8-D21BFCECBBE0}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{C3525197-C587-4560-88F8-D21BFCECBBE0}.Debug|x86.ActiveCfg = Debug|x86
+		{C3525197-C587-4560-88F8-D21BFCECBBE0}.Debug|x86.Build.0 = Debug|x86
+		{C3525197-C587-4560-88F8-D21BFCECBBE0}.Release|Any CPU.ActiveCfg = Release|x86
+		{C3525197-C587-4560-88F8-D21BFCECBBE0}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{C3525197-C587-4560-88F8-D21BFCECBBE0}.Release|Mixed Platforms.Build.0 = Release|x86
+		{C3525197-C587-4560-88F8-D21BFCECBBE0}.Release|x86.ActiveCfg = Release|x86
+		{C3525197-C587-4560-88F8-D21BFCECBBE0}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
