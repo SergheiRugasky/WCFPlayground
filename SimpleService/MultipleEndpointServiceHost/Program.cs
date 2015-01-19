@@ -4,21 +4,22 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using Homework;
+using SimpleService;
 
-namespace HomeworkConsole
+namespace MultipleEndpointServiceHost
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var  homeworkHost = new ServiceHost(typeof(HomeworkService));
-            homeworkHost.Open();
-            foreach (var endpoint in homeworkHost.Description.Endpoints)
+            var serviceHost = new ServiceHost(typeof(MultipleEndpointsService.MultipleEndpointsService));
+            serviceHost.Open();
+
+            foreach (var endpoint in serviceHost.Description.Endpoints)
             {
                 Console.WriteLine(endpoint.Address);
             }
-            Console.WriteLine("homework is running");
+
             Console.ReadLine();
         }
     }

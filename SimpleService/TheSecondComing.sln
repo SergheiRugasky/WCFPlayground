@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleService", "SimpleService\SimpleService.csproj", "{F81B0F63-011A-4123-838C-AA1A11997BF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{478C996E-F822-4D69-81CC-B47919C608D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleServiceHost", "SimpleServiceHost\SimpleServiceHost.csproj", "{7D732BD0-1CE6-4F6D-885A-718EFF662032}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleClient", "SimpleClient\SimpleClient.csproj", "{67D88CF3-8D2D-4484-83B4-AA9959B81E5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleEnpointsService", "MultipleEnpointsService\MultipleEnpointsService.csproj", "{70DC0404-0517-4F10-AAEA-61E4FB18E857}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleEndpointServiceHost", "MultipleEndpointServiceHost\MultipleEndpointServiceHost.csproj", "{C06EFA7C-652C-4802-9B9F-49D924BB41E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F81B0F63-011A-4123-838C-AA1A11997BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81B0F63-011A-4123-838C-AA1A11997BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81B0F63-011A-4123-838C-AA1A11997BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81B0F63-011A-4123-838C-AA1A11997BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{478C996E-F822-4D69-81CC-B47919C608D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478C996E-F822-4D69-81CC-B47919C608D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478C996E-F822-4D69-81CC-B47919C608D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478C996E-F822-4D69-81CC-B47919C608D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D732BD0-1CE6-4F6D-885A-718EFF662032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D732BD0-1CE6-4F6D-885A-718EFF662032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D732BD0-1CE6-4F6D-885A-718EFF662032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D732BD0-1CE6-4F6D-885A-718EFF662032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67D88CF3-8D2D-4484-83B4-AA9959B81E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67D88CF3-8D2D-4484-83B4-AA9959B81E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67D88CF3-8D2D-4484-83B4-AA9959B81E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67D88CF3-8D2D-4484-83B4-AA9959B81E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DC0404-0517-4F10-AAEA-61E4FB18E857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DC0404-0517-4F10-AAEA-61E4FB18E857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DC0404-0517-4F10-AAEA-61E4FB18E857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DC0404-0517-4F10-AAEA-61E4FB18E857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06EFA7C-652C-4802-9B9F-49D924BB41E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06EFA7C-652C-4802-9B9F-49D924BB41E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06EFA7C-652C-4802-9B9F-49D924BB41E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06EFA7C-652C-4802-9B9F-49D924BB41E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
