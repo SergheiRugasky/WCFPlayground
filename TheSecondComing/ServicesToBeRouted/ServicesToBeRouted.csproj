@@ -5,14 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C3525197-C587-4560-88F8-D21BFCECBBE0}</ProjectGuid>
+    <ProjectGuid>{AEB3A02A-D07B-4279-B126-7B2C6B9DA1DA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RuntimeClient</RootNamespace>
-    <AssemblyName>RuntimeClient</AssemblyName>
+    <RootNamespace>ServicesToBeRouted</RootNamespace>
+    <AssemblyName>ServicesToBeRouted</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -45,21 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HelloWorld.cs" />
+    <Compile Include="OneWayService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Entities\Entities.csproj">
-      <Project>{89EB4D58-FBA0-49BD-94BF-12BE03BC99BC}</Project>
-      <Name>Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ServiceCalculator\ServiceCalculator.csproj">
-      <Project>{FE170C6D-93C6-41F0-B2F2-5E1BD82784DD}</Project>
-      <Name>ServiceCalculator</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
