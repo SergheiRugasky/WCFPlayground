@@ -5,7 +5,11 @@ namespace Infrastructure
     [ServiceContract]
     public interface INetOverTCP
     {
-        [OperationContract]
+        [OperationContract(Name = "1")]
         string Talk(string message);
+
+        [OperationContract]
+        string Talk(bool merge);
+
     }
 }

@@ -48,6 +48,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Duplex\Duplex.csproj">
+      <Project>{83661224-176C-4974-81CE-E7C0A3A2F41A}</Project>
+      <Name>Duplex</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
       <Project>{659735F8-3009-4B38-BDE0-280DE9E95AC7}</Project>
       <Name>Infrastructure</Name>
@@ -56,13 +60,19 @@
       <Project>{D5287C90-D502-4785-AD02-D07DFD72A97C}</Project>
       <Name>MSMQTransportation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NamedPipes\NamedPipes.csproj">
+      <Project>{F85E9CB4-28A6-443B-82E9-B76740FD39C0}</Project>
+      <Name>NamedPipes</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NetTCP\NetTCP.csproj">
       <Project>{CBF9DA48-63E8-4B61-869F-00BCE4B2AE14}</Project>
       <Name>NetTCP</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
