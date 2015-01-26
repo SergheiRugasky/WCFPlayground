@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
+using System.ServiceModel.Description;
 using System.ServiceModel.Syndication;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,14 +26,20 @@ namespace SimpleClient
 
             Console.WriteLine(hello);
 
-            var tcpChannelFactory = new ChannelFactory<IMultipleEndpointsService>(new BasicHttpBinding());
-            IMultipleEndpointsService multipleEndpointsService = tcpChannelFactory.CreateChannel(new EndpointAddress("http://localhost:5555/merge"));
-            string describeYourself = multipleEndpointsService.DescribeYourself();
+            //var tcpChannelFactory = new ChannelFactory<IMultipleEndpointsService>(new BasicHttpBinding());
+            //IMultipleEndpointsService multipleEndpointsService = tcpChannelFactory.CreateChannel(new EndpointAddress("http://localhost:5555/merge"));
+            //string describeYourself = multipleEndpointsService.DescribeYourself();
 
-            tcpChannelFactory = new ChannelFactory<IMultipleEndpointsService>(new NetTcpBinding());
-            IMultipleEndpointsService multipleEndpointsServiceOverTcp = tcpChannelFactory.CreateChannel(new EndpointAddress("net.tcp://server:8081/serghei"));
-            describeYourself = multipleEndpointsServiceOverTcp.DescribeYourself();
 
+            var serviceEndpointCollection =
+                MetadataResolver.Resolve(typeof (IMultipleEndpointsService),
+                    new EndpointAddress("http://localhost:12345/endpointmex"));
+
+            ServiceEndpoint endpoint = serviceEndpointCollection.FirstOrDefault();
+
+            var factory = new ChannelFactory<IMultipleEndpointsService>(endpoint.Binding,endpoint.Address);
+            var endpointsService = factory.CreateChannel();
+            var describeYourself = endpointsService.DescribeYourself();
             Console.WriteLine(describeYourself);
             Console.ReadLine();
         }
