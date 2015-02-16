@@ -16,6 +16,7 @@ namespace DefaultEndpointsHost
             defaultEndpointServiceHost.Open();
             foreach (var endpoint in defaultEndpointServiceHost.Description.Endpoints)
             {
+				
                 Console.WriteLine(endpoint.Address +" "+ endpoint.Binding+ " " +endpoint.Contract.ContractType +" " + endpoint.ListenUri);
             }
             Console.ReadLine();
