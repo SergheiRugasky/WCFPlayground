@@ -3,21 +3,20 @@
 namespace TestingTransactionScopeWithWCF
 {
     [ServiceContract]
-    
     public interface InterfaceForTransactionScope
     {
         [OperationContract]
-        [TransactionFlow(TransactionFlowOption.Mandatory)]
-        [FaultContract(typeof(int))]
-        void WriteStringToFile(string value);
+        [TransactionFlow(TransactionFlowOption.Allowed)]
+        void WriteStringToList(string value);
 
         [OperationContract]
-        string GetFileContent();
+        string GetValues();
 
         [OperationContract]
-        void Clean();
+        void ThrowException(bool shouldThrowException);
 
         [OperationContract]
-        void ThrowException();
+        [TransactionFlow(TransactionFlowOption.Allowed)]
+        void Enlist();
     }
 }
